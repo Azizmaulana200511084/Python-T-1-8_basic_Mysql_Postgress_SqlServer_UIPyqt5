@@ -1,0 +1,15 @@
+
+Nama                          : Aziz Maulana
+Nim                           : 200511084
+No.Hp                         : 83824082456
+Fakultas & Prodi              : Teknik Informatika
+Alamat Praktik Kerja Lapangan : Plumbon
+Dosen Pendamping Lapangan     : Bapak dosen
+			
+Nama                          : Maulana Aziz
+Nim                           : 480115002
+No.Hp                         : 654280428380
+Fakultas & Prodi              : Akitamrofni Kinket
+Alamat Praktik Kerja Lapangan : Nobmulp
+Dosen Pendamping Lapangan     : Bapak Dosen
+			

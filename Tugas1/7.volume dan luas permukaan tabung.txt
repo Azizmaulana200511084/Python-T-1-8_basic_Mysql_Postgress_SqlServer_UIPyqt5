@@ -1,0 +1,13 @@
+print("       <<<Volume & Luas Permukaan Tabung>>>")
+print("<<<<Mahasiswa Universitas Muhammadiyah Cirebon>>>>")
+
+tinggi=int(input("Masukan Tinggi \t\t\t: "))
+jari=int(input("Masukan Jari-jari Lingkaran \t: "))
+phi=22/7
+volume=int((phi*(jari*jari))*tinggi)
+luas=int(2*phi*jari*(tinggi+jari))
+
+print("\nHasil nya kuyy..........:")
+print ("Volume tabung \t\t= ", volume)
+print ("Luas tabung \t\t= ", luas)
+print("Jangan lupa bahagiaaaa.........")

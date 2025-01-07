@@ -1,0 +1,28 @@
+from PyQt5 import QtWidgets, uic
+from PyQt5 import QtCore
+import sys
+import math
+from typing import Text
+
+qtcreator_file = "faktorial.ui"
+Ui_FaktorialWindow, QtBaseClass = uic.loadUiType(qtcreator_file)
+
+class MyFaktorialWindow(QtWidgets.QMainWindow, Ui_FaktorialWindow):
+    def __init__(self):
+        QtWidgets.QMainWindow.__init__(self)
+        Ui_FaktorialWindow.__init__(self)
+        self.setWindowModality(QtCore.Qt.ApplicationModal)
+        self.setupUi(self)
+        self.btnHitung.clicked.connect(self.hitung)
+
+    def hitung(self):
+        nilai = float(self.txtNilai.text())
+        faktorial = math.factorial(nilai)
+        hasil = (f"{nilai}! Yaitu {faktorial}".replace(".0", ""))
+        self.txtHasil.setText(str(hasil))
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv) 
+    faktorial = MyFaktorialWindow()
+    faktorial.show() # Show in normal mode
+    sys.exit(app.exec_())
